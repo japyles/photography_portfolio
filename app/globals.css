@@ -113,7 +113,9 @@
   @apply bg-gray-400 dark:bg-gray-600;
 }
 
-/* Smooth scrolling */
-html {
+/* Smooth scrolling and prevent horizontal scrolling */
+html, body {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  max-width: 100%;
 }

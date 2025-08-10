@@ -118,7 +118,7 @@ export function FeaturedWork() {
           <Button
             asChild
             size="lg"
-            className="glass dark:glass-dark hover:scale-105 transition-all duration-300 shadow-xl"
+            className="glass dark:glass-dark hover:scale-105 transition-all duration-300 shadow-xl text-black dark:text-black hover:text-white"
           >
             <Link href="/portfolio">View Full Portfolio</Link>
           </Button>

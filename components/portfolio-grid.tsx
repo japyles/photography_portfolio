@@ -82,7 +82,7 @@ export function PortfolioGrid() {
               onClick={() => setSelectedCategory(category)}
               className={`glass dark:glass-dark transition-all duration-300 ${
                 selectedCategory === category 
-                  ? 'shadow-xl scale-105' 
+                  ? 'shadow-xl scale-105 text-black dark:text-black hover:text-white' 
                   : 'hover:shadow-lg hover:scale-105'
               }`}
             >

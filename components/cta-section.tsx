@@ -32,7 +32,7 @@ export function CtaSection() {
             <Button
               asChild
               size="lg"
-              className="glass dark:glass-dark hover:scale-105 transition-all duration-300 shadow-xl group"
+              className="glass dark:glass-dark hover:scale-105 transition-all duration-300 shadow-xl group text-black dark:text-black hover:text-white"
             >
               <Link href="/contact" className="flex items-center gap-2">
                 <Calendar className="h-5 w-5" />
@@ -43,7 +43,7 @@ export function CtaSection() {
               asChild
               variant="outline"
               size="lg"
-              className="glass dark:glass-dark hover:scale-105 transition-all duration-300 shadow-xl group"
+              className="glass dark:glass-dark hover:scale-105 transition-all duration-300 shadow-xl group text-black dark:text-black hover:text-white hover:bg-black"
             >
               <Link href="/contact" className="flex items-center gap-2">
                 <MessageCircle className="h-5 w-5" />

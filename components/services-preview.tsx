@@ -124,7 +124,7 @@ export function ServicesPreview() {
           <Button
             asChild
             size="lg"
-            className="glass dark:glass-dark hover:scale-105 transition-all duration-300 shadow-xl group"
+            className="glass dark:glass-dark hover:scale-105 transition-all duration-300 shadow-xl group text-black dark:text-black hover:text-white"
           >
             <Link href="/services" className="flex items-center gap-2">
               View All Services

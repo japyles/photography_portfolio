@@ -136,7 +136,7 @@ export function Hero() {
                 <Button
                   asChild
                   size="lg"
-                  className="glass dark:glass-dark text-white border-white/30 hover:bg-white/20 hover:scale-105 transition-all duration-300 shadow-2xl"
+                  className="glass dark:glass-dark border-white/30 hover:bg-white/20 hover:scale-105 transition-all duration-300 shadow-2xl text-white dark:text-white"
                 >
                   <Link href="/portfolio">View Portfolio</Link>
                 </Button>
@@ -144,7 +144,7 @@ export function Hero() {
                   asChild
                   variant="outline"
                   size="lg"
-                  className="glass dark:glass-dark text-white border-white/30 hover:bg-white/10 hover:scale-105 transition-all duration-300 shadow-2xl"
+                  className="glass dark:glass-dark border-white/30 hover:bg-white/10 hover:scale-105 transition-all duration-300 shadow-2xl text-white dark:text-white"
                 >
                   <Link href="/contact">Book a Session</Link>
                 </Button>

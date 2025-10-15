@@ -47,7 +47,7 @@ export function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
             <Camera className={`h-8 w-8 ${pathname === '/about' && theme === 'light' ? 'text-slate-500' : 'text-[seashell]'}`} />
-            <span className={`font-bold text-xl text-foreground ${pathname === '/about' && theme === 'light' ? 'text-slate-500' : 'text-[seashell]'}`}>
+            <span className={`font-bold text-xl ${pathname === '/about' && theme === 'light' ? 'text-slate-500' : 'text-[seashell]'}`}>
               Alex Morgan
             </span>
           </Link>

@@ -46,8 +46,8 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <Camera className="h-8 w-8 text-primary" />
-            <span className="font-bold text-xl text-foreground">
+            <Camera className="h-8 w-8 text-[seashell]" />
+            <span className="font-bold text-xl text-foreground text-[seashell]">
               Alex Morgan
             </span>
           </Link>
@@ -60,8 +60,8 @@ export function Navbar() {
                 href={item.href}
                 className={`text-sm font-medium transition-colors hover:text-primary ${
                   pathname === item.href
-                    ? 'text-primary'
-                    : 'text-foreground/70'
+                    ? 'text-[seashell]'
+                    : 'text-[seashell]/70'
                 }`}
               >
                 {item.name}
@@ -77,8 +77,8 @@ export function Navbar() {
               onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
               className="glass dark:glass-dark"
             >
-              <Sun className="h-4 w-4 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-              <Moon className="absolute h-4 w-4 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+              <Sun className="h-4 w-4 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0 text-[seashell]" />
+              <Moon className="absolute h-4 w-4 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100 text-[seashell]" />
             </Button>
 
             <Button

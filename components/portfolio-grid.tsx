@@ -10,16 +10,16 @@ const categories = ['All', 'Portraits', 'Weddings', 'Travel', 'Nature', 'Commerc
 
 const portfolioImages = [
   { id: 1, src: 'https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg', alt: 'Portrait 1', category: 'Portraits', title: 'Natural Light Portrait' },
-  { id: 2, src: 'https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg', alt: 'Wedding 1', category: 'Weddings', title: 'Wedding Ceremony' },
-  { id: 3, src: 'https://images.pexels.com/photos/1264210/pexels-photo-1264210.jpeg', alt: 'Commercial 1', category: 'Commercial', title: 'Corporate Headshot' },
+  { id: 2, src: 'https://images.pexels.com/photos/2909476/pexels-photo-2909476.jpeg', alt: 'Wedding 1', category: 'Weddings', title: 'Wedding Ceremony' },
+  { id: 3, src: 'https://images.pexels.com/photos/697509/pexels-photo-697509.jpeg', alt: 'Commercial 1', category: 'Commercial', title: 'Corporate Headshot' },
   { id: 4, src: 'https://images.pexels.com/photos/1462636/pexels-photo-1462636.jpeg', alt: 'Portrait 2', category: 'Portraits', title: 'Studio Portrait' },
-  { id: 5, src: 'https://images.pexels.com/photos/2253870/pexels-photo-2253870.jpeg', alt: 'Nature 1', category: 'Nature', title: 'Landscape Photography' },
-  { id: 6, src: 'https://images.pexels.com/photos/1619775/pexels-photo-1619775.jpeg', alt: 'Travel 1', category: 'Travel', title: 'Travel Portrait' },
-  { id: 7, src: 'https://images.pexels.com/photos/1024960/pexels-photo-1024960.jpeg', alt: 'Events 1', category: 'Events', title: 'Corporate Event' },
-  { id: 8, src: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg', alt: 'Portrait 3', category: 'Portraits', title: 'Environmental Portrait' },
-  { id: 9, src: 'https://images.pexels.com/photos/1194713/pexels-photo-1194713.jpeg', alt: 'Wedding 2', category: 'Weddings', title: 'Wedding Details' },
-  { id: 10, src: 'https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg', alt: 'Commercial 2', category: 'Commercial', title: 'Product Photography' },
-  { id: 11, src: 'https://images.pexels.com/photos/697509/pexels-photo-697509.jpeg', alt: 'Portrait 4', category: 'Portraits', title: 'Creative Portrait' },
+  { id: 5, src: 'https://images.pexels.com/photos/1183021/pexels-photo-1183021.jpeg', alt: 'Nature 1', category: 'Nature', title: 'Landscape Photography' },
+  { id: 6, src: 'https://images.pexels.com/photos/1371360/pexels-photo-1371360.jpeg', alt: 'Travel 1', category: 'Travel', title: 'Travel Portrait' },
+  { id: 7, src: 'https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg', alt: 'Events 1', category: 'Events', title: 'Corporate Event' },
+  { id: 8, src: 'https://images.pexels.com/photos/10673219/pexels-photo-10673219.jpeg', alt: 'Portrait 3', category: 'Portraits', title: 'Environmental Portrait' },
+  { id: 9, src: 'https://images.pexels.com/photos/169198/pexels-photo-169198.jpeg', alt: 'Wedding 2', category: 'Weddings', title: 'Wedding Details' },
+  { id: 10, src: 'https://images.pexels.com/photos/3766113/pexels-photo-3766113.jpeg', alt: 'Commercial 2', category: 'Commercial', title: 'Product Photography' },
+  { id: 11, src: 'https://images.pexels.com/photos/15674505/pexels-photo-15674505.jpeg', alt: 'Portrait 4', category: 'Portraits', title: 'Creative Portrait' },
   { id: 12, src: 'https://images.pexels.com/photos/2253824/pexels-photo-2253824.jpeg', alt: 'Nature 2', category: 'Nature', title: 'Nature Close-up' },
 ];
 

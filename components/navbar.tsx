@@ -112,7 +112,7 @@ export function Navbar() {
                   onClick={() => setIsMobileMenuOpen(false)}
                   className={`block px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                     pathname === item.href
-                      ? 'text-primary bg-primary/10'  
+                      ? 'text-[seashell] bg-slate-500/10'  
                       : 'text-foreground/70 hover:text-primary hover:bg-primary/5'
                   }
                   ${pathname === '/about' && theme === 'light' ? 'text-slate-500' : 'text-[seashell]'}`}

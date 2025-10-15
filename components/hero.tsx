@@ -15,7 +15,8 @@ const heroImages = [
     subtitle: 'Professional Photography That Tells Your Story',
   },
   {
-    src: 'https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg',
+    src: 'https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg',
+    // src: 'https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg',
     alt: 'Wedding Photography',
     title: 'Timeless Wedding Photography',
     subtitle: 'Preserving Your Most Precious Day Forever',

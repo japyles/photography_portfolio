@@ -53,7 +53,7 @@ export function AboutHero() {
             </div>
             <div className="absolute -bottom-6 -right-6 w-32 h-32 glass dark:glass-dark rounded-2xl flex items-center justify-center shadow-xl">
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary">10+</div>
+                <div className="text-3xl font-bold text-[seashell]">10+</div>
                 <div className="text-sm text-muted-foreground">Years</div>
               </div>
             </div>

@@ -40,14 +40,14 @@ export function Navbar() {
         isScrolled
           ? 'glass dark:glass-dark shadow-xl'
           : 'bg-transparent'
-      } ${pathname === '/about' ? 'text-slate-500' : 'text-[seashell]'}`}
+      }`}
     >
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <Camera className={`h-8 w-8 ${pathname === '/about' && theme === 'light' ? 'text-slate-500' : 'text-[seashell]'}`} />
-            <span className={`font-bold text-xl ${pathname === '/about' && theme === 'light' ? 'text-slate-500' : 'text-[seashell]'}`}>
+            <Camera className={`h-8 w-8 ${pathname === '/about' ? 'dark:text-white text-slate-800' : 'text-[seashell]'}`} />
+            <span className={`font-bold text-xl ${pathname === '/about' ? 'dark:text-white text-slate-800' : 'text-[seashell]'}`}>
               Alex Morgan
             </span>
           </Link>
@@ -60,7 +60,7 @@ export function Navbar() {
                 href={item.href}
                 className={`text-sm font-medium transition-colors hover:text-primary 
                   ${pathname === item.href ? 'opacity-100' : 'opacity-70 hover:opacity-100'}
-                  ${pathname === '/about' && theme === 'light' ? 'text-slate-500' : 'text-[seashell]'}`}
+                  ${pathname === '/about' ? 'dark:text-white/90 text-slate-800' : 'text-[seashell]'}`}
               >
                 {item.name}
               </Link>
@@ -76,7 +76,7 @@ export function Navbar() {
               className="glass dark:glass-dark"
             >
               <Sun className="h-4 w-4 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-              <Moon className={`absolute h-4 w-4 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100 ${pathname === '/about' && theme === 'light' ? 'text-slate-500' : 'text-[seashell]'}`} />
+              <Moon className={`absolute h-4 w-4 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100 ${pathname === '/about' ? 'dark:text-white text-slate-800' : 'text-[seashell]'}`} />
             </Button>
 
             <Button
@@ -112,10 +112,13 @@ export function Navbar() {
                   onClick={() => setIsMobileMenuOpen(false)}
                   className={`block px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                     pathname === item.href
-                      ? 'text-[seashell] bg-slate-500/10'  
-                      : 'text-foreground/70 hover:text-primary hover:bg-primary/5'
-                  }
-                  ${pathname === '/about' && theme === 'light' ? 'text-slate-500' : 'text-[seashell]'}`}
+                      ? pathname === '/about'
+                        ? 'dark:text-white text-slate-800 bg-slate-500/10'
+                        : 'text-[seashell] bg-slate-500/10'
+                      : pathname === '/about'
+                        ? 'dark:text-white/70 text-slate-800/70 hover:text-primary hover:bg-primary/5'
+                        : 'text-[seashell]/70 hover:text-primary hover:bg-primary/5'
+                  }`}
                 >
                   {item.name}
                 </Link>

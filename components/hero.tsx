@@ -29,16 +29,9 @@ const heroImages = [
   },
 ];
 
-type HeroProps = {
-  textColor: 'light' | 'dark';
-};
-
-export function Hero({ textColor }: HeroProps) {
+export function Hero() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
-
-  const textColorClass = textColor === 'dark' ? 'text-foreground' : 'text-white';
-  const buttonVariant = textColor === 'dark' ? 'default' : 'outline';
 
   useEffect(() => {
     if (!isAutoPlaying) return;
@@ -120,7 +113,7 @@ export function Hero({ textColor }: HeroProps) {
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               <motion.h1
-                className={`text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-shadow-lg ${ textColorClass }`}
+                className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-shadow-lg"
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.3 }}
@@ -128,7 +121,7 @@ export function Hero({ textColor }: HeroProps) {
                 {heroImages[currentSlide].title}
               </motion.h1>
               <motion.p
-                className={`text-xl md:text-2xl mb-8 ${ textColor === 'light' ? 'text-white/90' : 'text-foreground/90'} text-shadow`}
+                className="text-xl md:text-2xl mb-8 text-white/90 text-shadow"
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.5 }}
@@ -144,8 +137,7 @@ export function Hero({ textColor }: HeroProps) {
                 <Button
                   asChild
                   size="lg"
-                  variant={buttonVariant}
-                  className={` ${textColor === 'light' ? 'border-foreground/30 hover:bg-foreground/10' : 'glass dark:glass-dark border-white/30 hover:bg-white/20'} hover:scale-105 transition-all duration-300 shadow-2xl`}
+                  className="glass dark:glass-dark border-white/30 hover:bg-white/20 hover:scale-105 transition-all duration-300 shadow-2xl text-white dark:text-white"
                 >
                   <Link href="/portfolio">View Portfolio</Link>
                 </Button>
